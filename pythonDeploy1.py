@@ -9,7 +9,7 @@ st.markdown(
   """,
   unsafe_allow_html=True,
 )
-#robo = genai.Client(api_key="MY_APIKEY")
+#robo = genai.Client(api_key="MY_API_KEY")
 robo = genai.Client(api_key=st.secrets["MY_APIKEY"])
 mychat = robo.chats.create(model="gemini-flash-lite-latest")
 #mychat = robo.chats.create(model="gemini-3.1-flash-lite")
